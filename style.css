@@ -1,0 +1,777 @@
+html, body{
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    font-size: 14px;
+    font-family: sans-serif;
+    background-color: #f6f6f6;
+}
+
+li{
+    font-size: 12px;
+}
+
+p{
+    margin: 7px 0;
+    line-height: 23px;
+}
+
+.menu{
+    margin: 0; /* зовнішні відступи */
+    padding: 0; /* внутрішній відступ */
+    margin-bottom: 5.5px;
+}
+
+a{
+    text-decoration: none;
+    color: #0645ad;
+}
+a:hover{
+    text-decoration: underline;
+}
+
+
+.main_title{
+    font-family: 'Linux Libertine','Georgia','Times',serif;
+    font-weight: lighter;
+}
+h1 > .main_title{
+    font-size: 29px;
+}
+.edit_section{
+    margin-left: 13px;
+    font-size: 13px;
+    font-weight: normal;
+}
+
+header{
+    padding-top: 8px;
+    padding-right: 16px;
+}
+
+.inline_li{
+    display: inline-block;
+    margin-left: 5px;
+}
+
+.tabs{
+    height: 34px;
+    padding-top: 16px;
+    margin-left: -6px;
+    font-size: 13px;
+    background: -webkit-gradient(linear, left bottom, left top, from(#e8f2f8), to(#f6f6f6));
+    background: -o-linear-gradient(bottom, #e8f2f8, #f6f6f6);
+    background: linear-gradient(to top, #e8f2f8, #f6f6f6);
+}
+
+.tabs::before, .tabs::after{
+    content: "";
+    display: inline-block;
+    width: 1px;
+    height: 37px;
+    margin-top: -3px;
+    background-image: -webkit-gradient(linear,left top, left bottom,from(rgba(167,215,249,0)),to(#a7d7f9));
+    background-image: -o-linear-gradient(rgba(167,215,249,0),#a7d7f9);
+    background-image: linear-gradient(rgba(167,215,249,0),#a7d7f9);
+}
+.tabs::before{
+    margin-right: 8px;
+}
+.tabs::after{
+    margin-left: 8px;
+}
+
+.tabs > a{
+    vertical-align: 10px;
+}
+
+
+.active > a{
+    color: black;
+}
+.active:hover > a{
+    cursor: default;
+    text-decoration: none;
+}
+
+.active{
+    background: -webkit-gradient(linear, left bottom, left top, from(white), to(#f6f6f6));
+    background: -o-linear-gradient(bottom, white, #f6f6f6);
+    background: linear-gradient(to top, white, #f6f6f6);;
+}
+.active::before, .active::after{
+    margin-top: -4px;
+}
+
+.inline_li:first-child, .tabs:first-child{
+    margin-left: 0;
+}
+
+#navs_inline_1{
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    gap: 14px;
+}
+#navs_inline_1 > span{
+    font-size: 12px;
+    color: #54595d;
+}
+#navs_inline_1 > .menu{
+    margin-bottom: 0;
+}
+
+#navs_input{
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: end;
+        -ms-flex-align: end;
+            align-items: flex-end;
+    gap: 8px;
+}
+input{
+    height: 16px;
+    width: 200px;
+    padding: 5px;
+    padding-right: 28px;
+    margin-bottom: 12px;
+}
+#input_search{
+    position: relative;
+}
+#search{
+    position: absolute;
+    top: 13px;
+    right: 5px;
+    height: 16px;
+    width: 16px;
+    background-image: url(https://uk.wikipedia.org/w/skins/Vector/resources/skins.vector.styles.legacy/images/search.svg?ac00d);
+    background-size: cover;
+}
+
+.icons{
+    display: inline-block;
+    height: 14px;
+    width: 14px;
+    margin-top: -6px;
+    vertical-align: middle;
+}
+#user_icon{
+    background-image: url("https://uk.wikipedia.org/w/skins/Vector/resources/skins.vector.styles.legacy/images/user-avatar.svg?b7f58");
+    background-size: contain;
+}
+
+#navs_inline_2{
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    margin-bottom: -9px;
+}
+
+#nav_1{
+    margin-right: 40px;
+}
+
+
+main{
+    border: 1px solid #a7d7f9;
+} 
+
+#inline_text_and_img{
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    gap: 20px;
+}
+img{
+    width: 200px;
+}
+
+#aside_main{
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+}
+
+aside{
+    width: 160px;
+    margin: 0 17px;
+}
+
+aside > img{
+    height: 160px;
+    width: auto;
+    margin-bottom: 16px;
+}
+
+aside > nav{
+    margin: 16px 0 16px 12px;
+}
+aside ul{
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    margin-top: 5px;
+}
+aside li{
+    padding: 3px 0;
+}
+
+h6{
+    margin: 0;
+    font-size: 12px;
+    font-weight: normal;
+    color: #54595d;
+    overflow-x: hidden;
+}
+h6::after{
+    content: "";
+    display: block;
+    height: 1px;
+    width: 100%;
+    margin-top: 3px;
+    background-image: -webkit-gradient(linear,left top, right top,from(rgba(200,204,209,0)), color-stop(33%, #c8ccd1),color-stop(66%, #c8ccd1), to(rgba(200,204,209,0)));
+    background-image: -o-linear-gradient(left,rgba(200,204,209,0), #c8ccd1 33%,#c8ccd1 66%, rgba(200,204,209,0));
+    background-image: linear-gradient(to right,rgba(200,204,209,0), #c8ccd1 33%,#c8ccd1 66%, rgba(200,204,209,0));
+}
+
+#settings_icon{
+    display: block;
+    height: 16px;
+    width: 14px;
+    margin-top: 0;
+    float: right;
+    background: transparent url(https://uk.wikipedia.org/w/extensions/UniversalLanguageSelector/resources/images/cog-sprite.svg?cca73) no-repeat center top;
+}
+#pen{
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    margin-right: 2px;
+    background-image: url(https://uk.wikipedia.org/w/extensions/Wikibase/client/resources/images/edit.svg?34bc5);
+    background-position: left top;
+    background-repeat: no-repeat;
+    background-size: 10px 10px;
+}
+#edit{
+    display: block;
+    font-size: 12px;
+    color: #0645ad;
+    text-align: right;
+}
+#edit:hover{
+    text-decoration: underline;
+}
+
+
+main{
+    padding: 20px 24px 24px;
+    background-color: white;
+}
+#material_wikipedia{
+    color: #202122;
+    font-size: 13px;
+    line-height: 21px;
+}
+
+#blue_white_blocks{
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: end;
+        -ms-flex-align: end;
+            align-items: flex-end;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    margin-top: 3px;
+    margin-bottom: 16px;
+}
+
+#blue_block{
+    width: 95%;
+    padding: 5px;
+    border: 1px solid #c8ccd1;
+    text-align: center;
+    font-size: 12px;
+    background-color: #eaf3ff;
+}
+#white_block{
+    width: 93.5%;
+    height: 20px;
+    padding: 2px;
+    border: 1px solid #c8ccd1;
+}
+#denied{
+    height: 20px;
+    width: 20px;
+    margin-top: 0;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 width=%2220%22 height=%2220%22 viewBox=%220 0 20 20%22%3E%3Ctitle%3E block %3C/title%3E%3Cpath d=%22M10 1a9 9 0 1 0 9 9 9 9 0 0 0-9-9zm5 10H5V9h10z%22/%3E%3C/svg%3E");
+    background-size: cover;
+}
+
+#arrow_down{
+    height: 12px;
+    width: 12px;
+    margin-top: 0;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 width=%2212%22 height=%2212%22 viewBox=%220 0 12 12%22%3E%3Ctitle%3E down %3C/title%3E%3Cpath d=%22M9.9 2.9 6 6.8 2.1 2.9 1 4l5 5 5-5z%22/%3E%3C/svg%3E");
+    background-size: cover;
+}
+
+#list_of_article{
+    background-color: #f8f9fa;
+    border: 1px solid #a2a9b1;
+    padding: 5px;
+    width: -webkit-fit-content;
+    width:    -moz-fit-content;
+    width:         fit-content;
+}
+
+#list_of_article > h3{
+    margin: 0;
+    text-align: center;
+}
+#list_of_article .main_title{
+    font-size: 13px;
+    font-family: sans-serif;
+    font-weight: bold;
+}
+#list_of_article .edit_section{
+    font-size: 12.5;
+    margin-left: 0;
+}
+
+#list_of_article ul{
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+#list_of_article li{
+    line-height: 21.2px;
+    font-size: 13.3px;
+}
+
+.order_number{
+    padding-right: 5px;
+    color: #202122;
+}
+#list_of_article a:hover > .order_number{
+    text-decoration: underline;
+    -webkit-text-decoration-color: #202122;
+            text-decoration-color: #202122;
+}
+
+#list_of_article > ul > li > ul {
+    margin-left: 26px;
+}
+
+
+
+
+#short_info_block{
+    min-width: 265px;
+    border: 1px solid #aaa;
+    font-size: 12.3px;
+    background-color: #f9f9f9;
+    margin: 6px 0 6px 12px;
+    padding: 2.5px;
+}
+
+#info_title{
+    margin: 2.5px;
+    padding: 1px;
+    text-align: center;
+    background-color: #eee;
+}
+#info_title > h3{
+    font-size: 13.5px;
+    font-weight: bolder;
+    margin: 0;
+}
+#info_img{
+    text-align: center;
+}
+#info_img > img {
+    width: 93%;
+}
+#info_img > p{
+    margin: 0;
+}
+
+
+.info{
+    vertical-align: top;
+    text-align: left;
+    font-weight: bold;
+    padding: 1px;
+    background: #eee;
+}
+#short_info_block > hr{
+    border: .5px solid #a2a9b1;
+}
+#wikistore{
+    height: 20px;
+    width: 15px;
+    margin: 0;
+    background-image: url("https://upload.wikimedia.org/wikipedia/commons/thumb/4/4a/Commons-logo.svg/30px-Commons-logo.svg.png");
+    background-size: cover;
+}
+#info_additional{
+    text-align: center;
+}
+
+#line_section_2{
+    width: calc(100% - 300px);
+    margin: 0;
+}
+
+h2 > .main_title{
+    font-size: 21px;
+}
+#PEN{
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    float: right;
+    text-align: center;
+    font-size: 11px;
+    width: 250px;
+    line-height: 16px;
+    border: 1px solid #aaa;
+    background: #E0E8FF;
+    padding: 3px;
+    margin: 6px 0 6px 11px;
+}
+#PEN > img{
+    width: 50px;
+}
+blockquote{
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    gap: 6px;
+    margin: 0;
+}
+blockquote > p{
+    width: 92.5%;
+}
+
+blockquote::before{
+    content: '';
+    display: inline-block;
+    height: 22px;
+    width: 20px;
+    background-image: url("https://upload.wikimedia.org/wikipedia/commons/thumb/4/4d/Left_pointing_double_angle_quotation_mark_sh1.svg/40px-Left_pointing_double_angle_quotation_mark_sh1.svg.png");
+    background-size: cover;
+}
+
+blockquote::after{
+    content: '';
+    display: inline-block;
+    height: 22px;
+    width: 20px;
+    background-image: url("https://upload.wikimedia.org/wikipedia/commons/thumb/d/de/Right_pointing_double_angle_quotation_mark_sh1.svg/40px-Right_pointing_double_angle_quotation_mark_sh1.svg.png");
+    background-size: cover;
+}
+
+#coin, #coin > img{
+    width: 100%;
+    border: 1px solid #c8ccd1;
+}
+
+#coin{
+    width: 196px;
+    padding: 6px;
+    margin-top: 35px;
+    float: right;
+    font-size: 12.5px;
+    background-color: #f8f9fa;
+}
+#coin_info > p{
+    margin-top: 0;
+}
+#big_image{
+    height: 12px;
+    width: 66px;
+    margin-top: 0;
+    margin-left: 5px;
+    background-image: url("https://uk.wikipedia.org/w/resources/src/mediawiki.skinning/images/magnify-clip-ltr.svg?8330e");
+    background-size: cover;
+}
+
+#coin_info{
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+}
+
+#characters > h3 > .main_title{
+    font: bold 17px sans-serif;
+}
+
+#characters > ul{
+    padding-left: 22.4px;
+}
+
+#characters li{
+    font-size: 14px;
+    line-height: 22.4px;
+}
+
+#block_clarifying{
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content;
+    margin: 0 auto;
+    border: 1px solid #a2a9b1;
+    border-left: 10px solid #f28500;
+    background-color: #fbfbfb;
+}
+#block_clarifying > p{
+    margin: 3.5px 7px;
+}
+#wikipedia_big{
+    margin: 0;
+    height: 40px;
+    width: 40px;
+    margin: 2px 0;
+    margin-left: 7px;
+    background-image: url("https://upload.wikimedia.org/wikipedia/commons/thumb/6/6c/Wiki_letter_w.svg/80px-Wiki_letter_w.svg.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.primary{
+    border-collapse: collapse;
+    background-color: #f8f9fa;
+}
+.primary th, .primary td{
+    border: 1px solid #a2a9b1;
+    padding: 3px 6px;
+}
+.primary th{
+    background-color: #eaecf0;
+}
+
+#wrapper_list_of_references{
+    max-height: 350px;
+    overflow-y: auto;
+}
+#list_of_references{
+    -moz-column-count: 2;
+         -webkit-column-count: 2;
+            column-count: 2;
+}
+#reference > li{
+    font-size: 12.6px;
+    line-height: 20px;
+}
+
+#secondary{
+    padding: 2px;
+    border: 1px solid #aaa;
+}
+
+#secondary th, #secondary td{
+    border: 0;
+}
+#secondary th{
+    font-size: 12.3px;
+    font-weight: 700;
+    padding: 3px 12.3px;
+    text-align: right;
+    line-height: 18.5px;
+    vertical-align: top;
+    background: #ddddff;
+}
+#secondary td{
+    padding: 0 3px;
+    line-height: 22px;
+    text-align: center;
+}
+#secondary > tbody > tr:nth-child(even){
+    background: #f0f0f0;
+}
+#secondary > thead th{
+    text-align: center;
+    background: #ccccff;
+}
+#secondary_title{
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    font-size: 13.5px;
+    font-weight: 700;
+}
+#secondary_title ul{
+    margin: 0;
+    padding: 0;
+}
+#secondary_title li{
+    display: inline-block;
+    font-size: 12.3px;
+}
+#eneida{
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content;
+    margin: 0 auto;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+}
+#eneida > img{
+    width: 55px;
+    height: 36px;
+}
+#eneida p{
+    margin: 0;
+}
+
+#many_icons{
+    padding: 7px 0;
+    margin: 10px 0;
+    background: #f9f9f9;
+    border: 1px #aaa solid;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    gap: 30px;
+}
+
+#book, #ukr_literatura, #fantastic, #fantasy, #Ukraine{
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: 0;
+}
+
+#book{
+    height: 21px;
+    width: 24px;
+    background-image: url("https://upload.wikimedia.org/wikipedia/commons/thumb/9/96/Books-aj.svg_aj_ashton_01g.svg/48px-Books-aj.svg_aj_ashton_01g.svg.png");
+}
+#ukr_literatura{
+    height: 24px;
+    width: 24px;
+    background-image: url("https://upload.wikimedia.org/wikipedia/commons/thumb/a/ab/Inkwell_icon_-_Noun_Project_2512.svg/48px-Inkwell_icon_-_Noun_Project_2512.svg.png");
+}
+#fantastic{
+    height: 18px;
+    width: 24px;
+    background-image: url("https://upload.wikimedia.org/wikipedia/commons/thumb/e/ef/Correa-Martians_vs._Thunder_Child_-_no_border.png/48px-Correa-Martians_vs._Thunder_Child_-_no_border.png");
+}
+#fantasy{
+    height: 18px;
+    width: 24px;
+    background-image: url("https://upload.wikimedia.org/wikipedia/commons/thumb/a/a2/The_one_ring_animated.gif/48px-The_one_ring_animated.gif");
+}
+#Ukraine{
+    height: 24px;
+    width: 17px;
+    background-image: url("https://upload.wikimedia.org/wikipedia/commons/thumb/9/95/Lesser_Coat_of_Arms_of_Ukraine.svg/34px-Lesser_Coat_of_Arms_of_Ukraine.svg.png");
+}
+
+#categories_block{
+    margin-top: 14px;
+    padding: 5px;
+    background: #f9f9f9;
+    border: 1px #aaa solid;
+    font-size: 14px;
+}
+#categories_block > ul{
+    display: inline;
+    margin: 0;
+    padding: 0;
+}
+#categories_block li:first-child{
+    border-left: 0;
+    padding-left: 3.5px;
+}
+#categories_block li{
+    display: inline-block;
+    line-height: 17.5px;
+    margin: 1.7px 0;
+    border-left: 1px solid #a2a9b1;
+    padding: 0 7px;
+}
+
+footer{
+    font-size: 12px;
+    padding: 20px 20px 6px;
+}
+
+footer > p{
+    margin: 0;
+    padding: 6px 0;
+    line-height: 16.8px;
+}
+footer ul{
+    margin: 0;
+    padding: 0;
+}
+footer li{
+    padding: 6px 0;
+    margin-right: 12px;
+    display: inline-block;
+    line-height: 24px;
+}
+footer li:last-child{
+    margin-right: 0;
+}
+
+#wikimedia_images{
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
+    gap: 6px;
+}
+#wikimedia_images > img{
+    height: 31px;
+    width: 88px;
+}
